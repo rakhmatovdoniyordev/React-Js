@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+.header{
+    background: url("../assets/header.png") no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.container{
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+.navbar{
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo h1{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Lora";
+    color: #fff;
+}
+.navbar__collection{
+    display: flex;
+    gap: 22px;
+}
+.navbar__link{
+    text-transform: uppercase;
+    font-family: "Oxygen";
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.navbar__menu{
+    width: 30px;
+    display: none;
+}
+.navbar__menu img{
+    width: 100%;
+    cursor: pointer;
+}
+.navbar__text{
+    width: 100%;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.navbar__text h2{
+    color: #fff;
+    font-size: 50px;
+    font-family: "Lora";
+    font-weight: 400;
+}
+.navbar__text p{
+    color: #FFFFFFA1;
+    font-size: 17px;
+    font-family: "Oxygen";
+}
+.navbar__text button{
+    padding: 12px 31px;
+    background: #DD783F;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    font-family: "Oxygen";
+    cursor: pointer;
+    transition: .3s;
+}
+.navbar__text button:hover{
+    opacity: 0.8;
+}
+
+
+@media (max-width: 660px) {
+    .navbar__collection{
+        display: none;
+    }
+    .navbar__menu{
+        display: flex;
+    }
+    .navbar__text{
+        text-align: center;
+    }
+}
